@@ -2,7 +2,7 @@
 import { useLanguage } from '../contexts/LanguageContext';
 import { ChevronDown } from 'lucide-react';
 import { useScrollTo } from '../hooks/useScrollTo';
-import video from '../assets/video_final1.mp4'
+// import video from '../assets/video_final1.mp4'
 // import video from '../assets/earth.mp4'
 export function Hero() {
   const { t } = useLanguage();
@@ -15,13 +15,14 @@ export function Hero() {
         opacity-65 bg-cover bg-center"
       /> */}
       <video
-        className="absolute inset-0 w-full h-full object-cover"
-        src={video}
-        autoPlay
-        loop
-        muted
-        playsInline
-      ></video>
+  className="absolute inset-0 w-full h-full object-cover md:object-contain lg:object-cover"
+  src="https://res.cloudinary.com/ddguf7pkw/video/upload/EZTech/adc7bnasuhcvhmbcwcxn"
+  autoPlay
+  loop
+  muted
+  playsInline
+></video>
+
       <div 
         className="absolute inset-0 bg-gradient-to-br from-blue-900 to-blue-600 opacity-15"
       />

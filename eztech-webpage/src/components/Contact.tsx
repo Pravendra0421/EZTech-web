@@ -45,28 +45,28 @@ export function Contact() {
   };
 
   return (
-    <section id="contact" className="py-20 bg-gray-50">
+    <section id="contact" className="py-20 bg-gray-50 dark:bg-gray-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-16">
           <div>
-            <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl">
+            <h2 className="text-3xl font-bold text-gray-900 dark:text-gray-200 sm:text-4xl">
               {t('contact.title')}
             </h2>
-            <p className="mt-4 text-lg text-gray-600">
+            <p className="mt-4 text-lg text-gray-600 dark:text-gray-200">
               {t('contact.subtitle')}
             </p>
 
             <div className="mt-8">
               <div className="flex items-center">
-                <Mail className="h-6 w-6 text-gray-900" />
-                <span className="ml-4 text-gray-600">vs.eztech@gmail.com</span>
+                <Mail className="h-6 w-6 text-gray-900 dark:text-gray-200" />
+                <span className="ml-4 text-gray-600 dark:text-gray-200">vs.eztech@gmail.com</span>
               </div>
             </div>
           </div>
 
           <form onSubmit={handleSubmit} className="space-y-6">
             <div>
-              <label htmlFor="name" className="block text-sm font-medium text-gray-700">
+              <label htmlFor="name" className="block text-sm font-medium text-gray-700 dark:text-gray-200">
                 {t('contact.form.name')}
               </label>
               <input
@@ -76,12 +76,12 @@ export function Contact() {
                 value={formData.name}
                 onChange={handleChange}
                 required
-                className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-gray-900 focus:ring-gray-900"
+                className="mt-1 block w-full rounded-md border-gray-300 dark:text-gray-200 shadow-sm focus:border-gray-900 focus:ring-gray-900"
               />
             </div>
 
             <div>
-              <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+              <label htmlFor="email" className="block text-sm font-medium dark:text-gray-200 text-gray-700">
                 {t('contact.form.email')}
               </label>
               <input
@@ -91,12 +91,12 @@ export function Contact() {
                 value={formData.email}
                 onChange={handleChange}
                 required
-                className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-gray-900 focus:ring-gray-900"
+                className="mt-1 block w-full rounded-md border-gray-300 dark:text-gray-200 shadow-sm focus:border-gray-900 focus:ring-gray-900"
               />
             </div>
 
             <div>
-              <label htmlFor="message" className="block text-sm font-medium text-gray-700">
+              <label htmlFor="message" className="block text-sm font-medium dark:text-gray-200 text-gray-700">
                 {t('contact.form.message')}
               </label>
               <textarea

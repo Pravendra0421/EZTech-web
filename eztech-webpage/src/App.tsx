@@ -31,9 +31,6 @@
 
 // export default App;
 
-
-
-
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { LanguageProvider } from "./contexts/LanguageContext";
 import { LoadingScreen } from "./components/LoadingScreen";
@@ -48,6 +45,7 @@ import EzChatPage from "./products/EZChat"; // Import the EzChat page component
 import "./styles/loading.css";
 import EzDashPage from "./products/EzDashPage";
 import { Suspense } from "react";
+import { ThemeProvider } from "./contexts/ThemeContext";
 
 function App() {
   return (
@@ -55,6 +53,7 @@ function App() {
       <Router>
         <Suspense fallback={<LoadingScreen />}>
         <LoadingScreen />
+        <ThemeProvider>
         <div className="min-h-screen bg-gray-50">
             <Header />
             <Routes>
@@ -70,6 +69,7 @@ function App() {
             </Routes>
             <Footer />
           </div>
+          </ThemeProvider>
         </Suspense>
       </Router>
     </LanguageProvider>

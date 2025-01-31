@@ -76,7 +76,7 @@ export function Contact() {
                 value={formData.name}
                 onChange={handleChange}
                 required
-                className="mt-1 block w-full rounded-md border-gray-300 dark:text-gray-200 shadow-sm focus:border-gray-900 focus:ring-gray-900"
+                className="mt-1 h-8 block w-full rounded-md border-gray-300 dark:text-gray-900 shadow-sm focus:border-gray-900 focus:ring-gray-900"
               />
             </div>
 
@@ -91,7 +91,7 @@ export function Contact() {
                 value={formData.email}
                 onChange={handleChange}
                 required
-                className="mt-1 block w-full rounded-md border-gray-300 dark:text-gray-200 shadow-sm focus:border-gray-900 focus:ring-gray-900"
+                className="mt-1 block h-8 w-full rounded-md border-gray-300  dark:text-gray-700 shadow-sm focus:border-gray-900 focus:ring-gray-900"
               />
             </div>
 
@@ -106,7 +106,7 @@ export function Contact() {
                 onChange={handleChange}
                 required
                 rows={4}
-                className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-gray-900 focus:ring-gray-900"
+                className="mt-1 block w-full rounded-md dark:text-gray-950 border-gray-300 shadow-sm focus:border-gray-900 focus:ring-gray-900"
               />
             </div>
 
